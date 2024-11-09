@@ -19,7 +19,6 @@
     body {
         background: linear-gradient(135deg, #1a1a1a 0, #2d3436 100%);
         color: #fff
-    
     }
 
     html {
@@ -61,14 +60,14 @@
         max-width: 400px;
         width: 100%;
         margin: 50px auto;
-        
+
     }
 
     #welcomeCard {
         border-radius: 20px;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         padding: 20px;
-        
+
         background-color: #fff;
         transition: transform .4s;
         cursor: pointer;
@@ -80,7 +79,7 @@
         transform: scale(1.1);
         background-color: #007bff;
         color: #fff;
-        
+
     }
 
     /* Gaya untuk welcome heading */
@@ -91,7 +90,7 @@
         font-weight: 700;
         display: inline-block;
         border-radius: 20px;
-        
+
     }
 
     @keyframes colorPulse {
@@ -139,7 +138,6 @@
         background: rgba(33, 37, 41, .95);
         backdrop-filter: blur(10px);
         border-bottom: 1px solid rgba(255, 255, 255, .1)
-
     }
 
     .navbar-toggler-icon {
@@ -148,7 +146,6 @@
 
     .nav-link:hover {
         color: #0d6efd !important
-        
     }
 
     .lingkaran {
@@ -171,27 +168,34 @@
     }
 
     .shopee-card {
-    transition: transform 0.3s, box-shadow 0.3s; /* Transisi untuk transformasi dan box-shadow */
-    padding: 15px;
-    border-radius: 10px;
-    background:linear-gradient(135deg, #1a1a1a 0, #2d3436 100%);
-     box-shadow:  4px 12px rgba(0, 0, 0, 0.1); /* Bayangan awal */
-}
+        transition: transform 0.3s, box-shadow 0.3s;
+        /* Transisi untuk transformasi dan box-shadow */
+        padding: 15px;
+        border-radius: 10px;
+        background: linear-gradient(135deg, #1a1a1a 0, #2d3436 100%);
+        box-shadow: 4px 12px rgba(0, 0, 0, 0.1);
+        /* Bayangan awal */
+    }
 
-.shopee-card:hover {
-    transform: scale(1.05); /* Membesarkan card sedikit saat hover */
-    box-shadow: 0 8px 16px rgba(0, 204, 255, 0.6); /* Bayangan lebih gelap dengan warna cyan */
-}
+    .shopee-card:hover {
+        transform: scale(1.05);
+        /* Membesarkan card sedikit saat hover */
+        box-shadow: 0 8px 16px rgba(0, 204, 255, 0.6);
+        /* Bayangan lebih gelap dengan warna cyan */
+    }
 
-/* Menambahkan efek pada tombol checkout saat hover */
-.btn-checkout {
-    transition: background-color 0.3s, color 0.3s; /* Transisi warna saat hover */
-}
+    /* Menambahkan efek pada tombol checkout saat hover */
+    .btn-checkout {
+        transition: background-color 0.3s, color 0.3s;
+        /* Transisi warna saat hover */
+    }
 
-.btn-checkout:hover {
-    background-color: #007bff; /* Mengubah warna latar belakang saat hover */
-    color: #fff; /* Mengubah warna teks saat hover */
-}
+    .btn-checkout:hover {
+        background-color: #007bff;
+        /* Mengubah warna latar belakang saat hover */
+        color: #fff;
+        /* Mengubah warna teks saat hover */
+    }
 
 
     .icon-container,
@@ -579,7 +583,7 @@
                 <p class="product-price">Rp150.00</p>
                 <small class="text-muted">Jumlah: 1</small>
             </div>
-            <button class="btn-checkout" onclick="sendToWhatsApp('Flashing', 'Rp50.000')">Checkout</button>
+            <button class="btn-checkout" onclick="sendToWhatsApp('Flashing', 'Rp150.00')">Checkout</button>
         </div>
 
         <!-- Card 2: UBL & Root -->
@@ -592,7 +596,7 @@
                 <p class="product-price">Rp60.000</p>
                 <small class="text-muted">Jumlah: 1</small>
             </div>
-            <button class="btn-checkout" onclick="sendToWhatsApp('UBL & Root', 'Rp70.000')">Checkout</button>
+            <button class="btn-checkout" onclick="sendToWhatsApp('UBL & Root', 'Rp60.000')">Checkout</button>
         </div>
 
         <!-- Card 3: Bypass FRP -->
@@ -605,7 +609,8 @@
                 <p class="product-price">Rp150.00</p>
                 <small class="text-muted">Jumlah: 1</small>
             </div>
-            <button class="btn-checkout" onclick="sendToWhatsApp('Bypass FRP', 'Rp80.000')">Checkout</button>
+            <button class="btn-checkout"
+                onclick="sendToWhatsApp('Bypass FRP', 'Rp150.000 Not all devices')">Checkout</button>
         </div>
 
         <!-- Card 4: Bypass Auth -->
@@ -618,7 +623,7 @@
                 <p class="product-price">Rp150.00</p>
                 <small class="text-muted">Jumlah: 1</small>
             </div>
-            <button class="btn-checkout" onclick="sendToWhatsApp('Bypass Auth', 'Rp60.000')">Checkout</button>
+            <button class="btn-checkout" onclick="sendToWhatsApp('Bypass Auth', 'Rp150.000')">Checkout</button>
         </div>
 
         <!-- Card 5: IMEI Repair -->
@@ -629,9 +634,9 @@
             <div>
                 <h5 class="product-name">IMEI Repair</h5>
                 <p class="product-price">Rp170.00</p>
-               
+
             </div>
-            <button class="btn-checkout" onclick="sendToWhatsApp('IMEI Repair', 'Rp100.000')">Checkout</button>
+            <button class="btn-checkout" onclick="sendToWhatsApp('IMEI Repair', 'Rp170.00')">Checkout</button>
         </div>
     </div>
 
@@ -654,27 +659,31 @@
 
     <div class="terms-card">
         <h2 class="display-4 text-center mb-4">Syarat dan Pembayaran</h2>
-    
+
         <h3>1. Syarat Layanan Root</h3>
         <p>Untuk menggunakan layanan root HP kami, Anda diwajibkan memenuhi beberapa syarat berikut:</p>
         <ul>
             <li>Memiliki perangkat Android yang kompatibel dengan proses root.</li>
-            <li>Pengguna harus menginstal aplikasi <strong>AnyDesk</strong> pada perangkat dan laptop mereka untuk memudahkan proses remote.</li>
+            <li>Pengguna harus menginstal aplikasi <strong>AnyDesk</strong> pada perangkat dan laptop mereka untuk
+                memudahkan proses remote.</li>
             <li>Perangkat harus terhubung dengan jaringan internet yang stabil untuk mendukung kelancaran proses.</li>
             <li>Memiliki laptop dengan spesifikasi yang cukup untuk mendukung proses root dengan AnyDesk.</li>
         </ul>
-    
+
         <h3>2. Pembayaran Layanan</h3>
         <div class="payment-terms">
             <h4>Ketentuan Pembayaran</h4>
             <ul>
                 <li>Pembayaran dilakukan penuh sebelum proses root dimulai.</li>
-                <li>Metode pembayaran dapat dilakukan melalui transfer bank, e-wallet, atau metode lain yang kami sediakan.</li>
-                <li>Kami tidak memberikan pengembalian dana setelah layanan dimulai, kecuali ada kesalahan teknis yang tidak dapat diperbaiki.</li>
+                <li>Metode pembayaran dapat dilakukan melalui transfer bank, e-wallet, atau metode lain yang kami
+                    sediakan.</li>
+                <li>Kami tidak memberikan pengembalian dana setelah layanan dimulai, kecuali ada kesalahan teknis yang
+                    tidak dapat diperbaiki.</li>
             </ul>
             <h4>Informasi Pembayaran</h4>
-            <p>Setelah pembayaran dilakukan, harap konfirmasi kepada kami melalui WhatsApp atau email dengan menyertakan bukti pembayaran. Kami akan memproses layanan segera setelah pembayaran dikonfirmasi.</p>
-    
+            <p>Setelah pembayaran dilakukan, harap konfirmasi kepada kami melalui WhatsApp atau email dengan menyertakan
+                bukti pembayaran. Kami akan memproses layanan segera setelah pembayaran dikonfirmasi.</p>
+
             <div class="payment-methods mt-4">
                 <h5>Metode Pembayaran</h5>
                 <ul class="list-inline">
@@ -687,7 +696,7 @@
             </div>
         </div>
     </div>
-    
+
 
 
     <div class="container" id="Contact">
@@ -768,8 +777,15 @@
 
                     <script>
                         let attemptsLeft = 5;
-                        let promoUsesLeft = localStorage.getItem("promoUsesLeft") ? parseInt(localStorage.getItem("promoUsesLeft")) : 2; // Check if promo uses were saved in localStorage, default to 2 if not
-                        const promoHP = ["samsung", "xiaomi", "oppo"]; // List of brands with promo
+                        let promoUsesLeft = localStorage.getItem("promoUsesLeft") ? parseInt(localStorage.getItem("promoUsesLeft")) : 2;
+                        const promoHP = [
+                            "Redmi Note 8 Pro", "Redmi Note 9", "Redmi Note 9 Pro 5G", "Redmi Note 9T", "Redmi 6", "Redmi 6A",
+                            "Redmi 9", "Redmi 9A", "Redmi 9C", "Realme C2", "Realme C3", "Realme C11", "Realme C12",
+                            "Realme C15", "Realme 5i", "Realme 6i"
+                        ];
+
+                        // Ubah semua elemen di promoHP menjadi lowercase untuk perbandingan yang konsisten
+                        const promoHPLowerCase = promoHP.map(device => device.toLowerCase());
 
                         function checkPromo() {
                             let e = document.getElementById("promoCode").value.toLowerCase();
@@ -781,47 +797,43 @@
                             promoMessage.innerHTML = "";
 
                             if (attemptsLeft > 0) {
-                                // Check if the promo is available for the entered device
-                                if (promoHP.includes(e)) {
+                                // Check if the promo is available for the entered device (in lowercase)
+                                if (promoHPLowerCase.includes(e)) {
                                     if (promoUsesLeft > 0) {
-                                        // Ask the user if they want to take the promo
                                         let confirmation = confirm(`Selamat! Anda mendapatkan promo untuk merk ${e}! Apakah Anda ingin mengambil promo ini?`);
 
                                         if (confirmation) {
-                                            // Send the promo message to WhatsApp and decrement the promo uses
                                             let a = `Selamat! Anda mendapatkan promo untuk merk ${e}!`;
                                             window.open(`https://wa.me/?text=${encodeURIComponent(a)}`, "_blank");
                                             t.innerHTML = "<span class='text-success'>Promo berhasil! Pesan terkirim ke WhatsApp.</span>";
-                                            promoUsesLeft--; // Decrement promo uses
-                                            localStorage.setItem("promoUsesLeft", promoUsesLeft); // Save the updated promo uses to localStorage
+                                            promoUsesLeft--;
+                                            localStorage.setItem("promoUsesLeft", promoUsesLeft);
 
                                             if (promoUsesLeft === 0) {
                                                 showAlert("Promo telah habis digunakan.", "info");
-                                                promoButton.disabled = true; // Disable button after promo uses are finished
+                                                promoButton.disabled = true;
                                             }
                                         } else {
                                             t.innerHTML = "<span class='text-warning'>Promo dibatalkan oleh pengguna.</span>";
                                         }
                                     } else {
                                         t.innerHTML = "<span class='text-danger'>Anda sudah menggunakan promo maksimal 2 kali.</span>";
-                                        promoButton.disabled = true; // Disable button after promo limit is reached
+                                        promoButton.disabled = true;
                                     }
-                                    attemptsLeft = 5; // Reset attempts if the promo is successful
-                                    promoMessage.innerHTML = ""; // Clear any previous message
+                                    attemptsLeft = 5;
+                                    promoMessage.innerHTML = "";
                                 } else {
-                                    // If the entered device does not have a promo
                                     attemptsLeft--;
                                     t.innerHTML = `<span class='text-danger'>Kode tidak valid. Anda bisa mencoba ${attemptsLeft} kali lagi.</span>`;
-                                    promoMessage.innerHTML = "<span class='text-danger'>Perangkat ini tidak tersedia promo.</span>"; // Show no promo message
+                                    promoMessage.innerHTML = "<span class='text-danger'>Perangkat ini tidak tersedia promo.</span>";
                                 }
                             }
 
-                            // If attempts are exhausted
                             if (attemptsLeft === 0) {
                                 showAlert("Percobaan habis. Silakan coba lagi setelah 1 jam.", "danger");
                                 t.innerHTML = "";
                                 promoButton.disabled = true;
-                                localStorage.setItem("lockedUntil", Date.now() + 3600000); // Lock for 1 hour
+                                localStorage.setItem("lockedUntil", Date.now() + 3600000);
                             }
                         }
 
@@ -834,7 +846,7 @@
                             s.innerHTML = `
     ${e}
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-`;
+  `;
 
                             a.appendChild(s);
 
@@ -846,7 +858,6 @@
                         }
 
                         window.onload = function () {
-                            // Check if promo is locked due to too many attempts
                             let e = localStorage.getItem("lockedUntil");
                             if (e && Date.now() < e) {
                                 let t = Math.ceil((e - Date.now()) / 60000);
@@ -854,13 +865,12 @@
                                 document.querySelector("button").disabled = true;
                             }
 
-                            // If promo uses are 0, disable the promo button
                             if (promoUsesLeft === 0) {
                                 showAlert("Promo telah habis digunakan.", "info");
-                                document.getElementById("promoCode").disabled = false; // Allow typing in the input
-                                document.querySelector("button").disabled = true; // Disable button
+                                document.querySelector("button").disabled = true;
                             }
                         };
+
 
                     </script>
 
