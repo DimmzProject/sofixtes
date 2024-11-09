@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <title>tes Website</title>
 </head>
@@ -410,12 +410,12 @@
 
     #deviceCheckerCard {
         background: linear-gradient(135deg, #1a1a1a 0%, #2d3436 100%);
-        color:#fff;
         max-width: 400px;
         width: 100%;
         border-radius: 12px;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         transition: transform .3s;
+        color: #fff;
     }
 
     #deviceCheckerCard:hover {
@@ -576,7 +576,7 @@
             </div>
             <div>
                 <h5 class="product-name">Flashing</h5>
-                <p class="product-price">Rp50.000</p>
+                <p class="product-price">Rp150.00</p>
                 <small class="text-muted">Jumlah: 1</small>
             </div>
             <button class="btn-checkout" onclick="sendToWhatsApp('Flashing', 'Rp50.000')">Checkout</button>
@@ -589,7 +589,7 @@
             </div>
             <div>
                 <h5 class="product-name">UBL & Root</h5>
-                <p class="product-price">Rp70.000</p>
+                <p class="product-price">Rp60.000</p>
                 <small class="text-muted">Jumlah: 1</small>
             </div>
             <button class="btn-checkout" onclick="sendToWhatsApp('UBL & Root', 'Rp70.000')">Checkout</button>
@@ -602,7 +602,7 @@
             </div>
             <div>
                 <h5 class="product-name">Bypass FRP</h5>
-                <p class="product-price">Rp80.000</p>
+                <p class="product-price">Rp150.00</p>
                 <small class="text-muted">Jumlah: 1</small>
             </div>
             <button class="btn-checkout" onclick="sendToWhatsApp('Bypass FRP', 'Rp80.000')">Checkout</button>
@@ -615,7 +615,7 @@
             </div>
             <div>
                 <h5 class="product-name">Bypass Auth</h5>
-                <p class="product-price">Rp60.000</p>
+                <p class="product-price">Rp150.00</p>
                 <small class="text-muted">Jumlah: 1</small>
             </div>
             <button class="btn-checkout" onclick="sendToWhatsApp('Bypass Auth', 'Rp60.000')">Checkout</button>
@@ -628,8 +628,8 @@
             </div>
             <div>
                 <h5 class="product-name">IMEI Repair</h5>
-                <p class="product-price">Rp100.000</p>
-                <small class="text-muted">Jumlah: 1</small>
+                <p class="product-price">Rp170.00</p>
+               
             </div>
             <button class="btn-checkout" onclick="sendToWhatsApp('IMEI Repair', 'Rp100.000')">Checkout</button>
         </div>
@@ -654,33 +654,40 @@
 
     <div class="terms-card">
         <h2 class="display-4 text-center mb-4">Syarat dan Pembayaran</h2>
-
+    
         <h3>1. Syarat Layanan Root</h3>
         <p>Untuk menggunakan layanan root HP kami, Anda diwajibkan memenuhi beberapa syarat berikut:</p>
         <ul>
             <li>Memiliki perangkat Android yang kompatibel dengan proses root.</li>
-            <li>Pengguna harus menginstal aplikasi **AnyDesk** pada perangkat dan laptop mereka untuk memudahkan proses
-                remote.</li>
+            <li>Pengguna harus menginstal aplikasi <strong>AnyDesk</strong> pada perangkat dan laptop mereka untuk memudahkan proses remote.</li>
             <li>Perangkat harus terhubung dengan jaringan internet yang stabil untuk mendukung kelancaran proses.</li>
             <li>Memiliki laptop dengan spesifikasi yang cukup untuk mendukung proses root dengan AnyDesk.</li>
         </ul>
-
+    
         <h3>2. Pembayaran Layanan</h3>
         <div class="payment-terms">
             <h4>Ketentuan Pembayaran</h4>
             <ul>
                 <li>Pembayaran dilakukan penuh sebelum proses root dimulai.</li>
-                <li>Metode pembayaran dapat dilakukan melalui transfer bank, e-wallet, atau metode lain yang kami
-                    sediakan.</li>
-                <li>Kami tidak memberikan pengembalian dana setelah layanan dimulai, kecuali ada kesalahan teknis yang
-                    tidak dapat diperbaiki.</li>
+                <li>Metode pembayaran dapat dilakukan melalui transfer bank, e-wallet, atau metode lain yang kami sediakan.</li>
+                <li>Kami tidak memberikan pengembalian dana setelah layanan dimulai, kecuali ada kesalahan teknis yang tidak dapat diperbaiki.</li>
             </ul>
             <h4>Informasi Pembayaran</h4>
-            <p>Setelah pembayaran dilakukan, harap konfirmasi kepada kami melalui WhatsApp atau email dengan menyertakan
-                bukti pembayaran. Kami akan memproses layanan segera setelah pembayaran dikonfirmasi.</p>
+            <p>Setelah pembayaran dilakukan, harap konfirmasi kepada kami melalui WhatsApp atau email dengan menyertakan bukti pembayaran. Kami akan memproses layanan segera setelah pembayaran dikonfirmasi.</p>
+    
+            <div class="payment-methods mt-4">
+                <h5>Metode Pembayaran</h5>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><i class="bi bi-wallet2"></i> DANA</li>
+                    <li class="list-inline-item"><i class="bi bi-phone"></i> OVO</li>
+                    <li class="list-inline-item"><i class="bi bi-bank"></i> SeaBank</li>
+                    <li class="list-inline-item"><i class="bi bi-credit-card"></i> GoPay</li>
+                    <li class="list-inline-item"><i class="bi bi-qr-code"></i> QR Code</li>
+                </ul>
+            </div>
         </div>
     </div>
-
+    
 
 
     <div class="container" id="Contact">
@@ -711,7 +718,7 @@
                         <div class="row text-light justify-content-center align-items-center">
                             <!-- WhatsApp -->
                             <div class="col-4 col-md-2 text-center mb-3">
-                                <a href="https://wa.me/6281234567890" target="_blank" title="WhatsApp">
+                                <a href="https://wa.me/6289515001716" target="_blank" title="WhatsApp">
                                     <img src="img/WhatsApp-min.jpg" alt="WhatsApp" width="45px" height="45px">
 
                                 </a>
@@ -719,7 +726,7 @@
 
                             <!-- Telegram -->
                             <div class="col-4 col-md-2 text-center mb-3">
-                                <a href="https://t.me/username" target="_blank" title="Telegram">
+                                <a href="https://t.me/DimNotBad" target="_blank" title="Telegram">
                                     <img src="img/Telegram_logo-min.jpg" alt="Telegram Logo" width="41px" height="41px"
                                         loading="lazy">
 
@@ -730,7 +737,7 @@
 
                             <!-- Gmail -->
                             <div class="col-4 col-md-2 text-center mb-3">
-                                <a href="mailto:info@solusifixsoftware.com" target="_blank" title="Gmail">
+                                <a href="coomingsoon.html" target="_blank" title="Gmail">
                                     <img src="img/Gmail_Icon_(2013-2020)-min_11zon.jpg" alt="Gmail Logo" width="35px"
                                         height="32px">
 
